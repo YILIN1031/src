@@ -8,7 +8,7 @@
 <body>
     <!-- here is a comment -->
     <?php
-        echo "<h1>hello world! Have a nice day!</h1>";    
+        echo "Have a nice day!</h1>";    
     ?>
 </body>
 </html>
