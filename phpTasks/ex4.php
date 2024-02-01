@@ -12,12 +12,13 @@
     <form method="post">
     Name: <input type="text" name="name" required>
     Age: <input type="number" name="age" required>
-    <input type="submit" name="submit" value="Check">
+    <input type="submit" name="submit_vote" value="Check">
     </form>
 
     <?php
     // Check if the form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["submit_vote"])) 
+    {
         // Collect value of input field
         $name = htmlspecialchars($_POST["name"]);
         $age = htmlspecialchars($_POST["age"]);
@@ -61,12 +62,13 @@
     <!-- Form for user input -->
     <form method="post">
         Enter a number: <input type="number" name="number">
-        <input type="submit" value="Generate Multiplication Table">
+        <input type="submit" value="Generate Multiplication Table" name="submit_table">
     </form>
 
     <?php
     // Check if form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["submit_table"]))
+    {
         // Get the number from form input
         $n = $_POST["number"];
         echo "<h4>Multiplication Table for: $n</h4>";
@@ -85,12 +87,12 @@
 
     <form method="post">
     Enter a number: <input type="number" name="number" min="1">
-    <input type="submit" value="Print Numbers">
+    <input type="submit" value="Print Numbers" name="submit_num">
     </form>
 
     <?php
-    // Check if form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["submit_num"]))
+    {
         // Get the number from form input
         $n = $_POST["number"];
         $i = 1; // Start counter
