@@ -4,9 +4,25 @@
   <div class="row">
 <footer style="background-color: rgb(134, 206, 203); color: white;">
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© Yilin - Individual Exercises of Web Programming.</div>
-  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    © Yilin - Individual Exercises of Web Programming.
+
+    <br>
+  
+    <?php
+    // Get the full path to the current script
+    $currentFilePath = $_SERVER['SCRIPT_FILENAME'];
+
+    // Get the last modification time of the file
+    $lastModifiedTime = filemtime($currentFilePath);
+
+    // Format the modification time for display
+    $formattedTime = date("F d Y H:i:s", $lastModifiedTime);
+
+    // Display the last modification time in the footer
+    echo "Last modified: $formattedTime<br>";
+    ?>
+  </div>
 
 </footer></div>
 </div>
