@@ -43,6 +43,9 @@
         <li class="nav-item">
           <a class="nav-link" href="ex4.php">Exercise 4</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ex5.php">Exercise 5</a>
+        </li>
       </ul>
       <!--
       <form class="d-flex" role="search">
