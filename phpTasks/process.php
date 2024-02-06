@@ -4,7 +4,7 @@
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $city = $_POST['city'];
-        $groupid = $_POST['groupId'];
+        $groupid = $_POST['groupid'];
         include 'db.php';
         $sql = "insert into studentinfo(first_name, last_name, city, groupId) values ('$fname', '$lname', '$city', '$groupid')";
 
