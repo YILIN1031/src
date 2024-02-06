@@ -12,7 +12,6 @@ $dbname = "app1";
 */
 
 // shell.hamk.fi
-$servername = "localhost";
 $username = "yilin23000";
 $password = "7Y6BNxgK";
 $dbname = "wp_yilin23000";
