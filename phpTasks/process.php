@@ -6,10 +6,10 @@
         $city = $_POST['city'];
         $groupid = $_POST['groupid'];
         include 'db.php';
-        $sql = "insert info studentsinfo(first_name, last_name, city, groupId) 
+        $sql = "insert info studentinfo(first_name, last_name, city, groupId) 
                 values ('$fname', '$lname', '$city', '$groupid')";
 
-        if ($conn -> query($sql) == TRUE)
+        if ($conn -> query($sql) === TRUE)
         {
             echo "Your data was recorded.";
         }
