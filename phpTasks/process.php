@@ -7,7 +7,7 @@
         $groupid = $_POST['groupid'];
         include 'db.php';
         $sql = "insert info studentinfo(first_name, last_name, city, groupId) 
-                values ('$fname', '$lname', '$city', '$groupid')";
+                values('$fname', '$lname', '$city', '$groupid')";
 
         if ($conn -> query($sql) === TRUE)
         {
