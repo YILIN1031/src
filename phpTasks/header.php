@@ -67,7 +67,9 @@
     <!--
     <div class="col-sm-3" style="background-color: rgba(228, 235, 194, 0.353);">
       <h3>List of Tasks</h3>
-      some thing here
+      <ul>
+        <li></li>
+      </ul>
     </div>
     -->
     <div class="col-sm-9">
