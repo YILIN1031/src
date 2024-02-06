@@ -12,6 +12,7 @@ $dbname = "app1";
 */
 
 // shell.hamk.fi
+$servername = "localhost";
 $username = "yilin23000";
 $password = "7Y6BNxgK";
 $dbname = "wp_yilin23000";
@@ -24,6 +25,6 @@ if ($conn -> connect_error)
 {
     die("Connection Failed:" . $conn -> connect_error);
 }
-echo "Connected successfully! ";
+echo "Connected successfully!      ";
 
 ?>
